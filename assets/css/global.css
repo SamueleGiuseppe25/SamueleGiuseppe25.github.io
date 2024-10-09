@@ -1,4 +1,5 @@
 /*  ============= WEB BROWSER RESETS ============ */
+body { background-color: lightgreen; }
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
 html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
@@ -11,10 +12,25 @@ input, button, textarea, select { font: inherit }
 
 /* ================= ENDS ================ */
 
+
+/* Desktops */
+@media (min-width: 768px) {
+    body { padding: 4% 20% }
+ }
+ 
+ /* Mobiles */
+ @media (max-width: 767px) {
+    body { padding: 8% 5% }
+ }
+
+/* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
+body { padding: 4% 20% }
+
 body {
     text-align: center;
     font-family: sans-serif;
 }
+
 
 h1 {
     font-size: 78px;
@@ -44,3 +60,5 @@ p {
     margin-bottom: 16px;
 }
 
+a { color: darkgreen; }
+ 
