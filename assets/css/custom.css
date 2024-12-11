@@ -1,13 +1,32 @@
 
-nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #0f172a }
+nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: var(--black-000) }
 
-header.theme-dark   { background-color: #0f172a }
+/*header.theme-dark   { background-color: #3C493F }*/
 
-header.theme-dark  h1 { color: var(--sky-400); }
+/*header.theme-dark  h1 { color: var(--sky-400); }*/
 
-section.theme-dark   { background-color: #0f172a }
+section.theme-dark   { background-color: black }
 
-footer.theme-dark   { background-color: #0f172a }
+footer.theme-dark   { background-color: #3C493F }
+
+header.theme-dark h1 { color: var(--green-200) }
+header.theme-dark .badge { color: var(--black-000) }
+header.theme-dark { background-color: var(--black-000) }
+header.theme-dark .badge { background-color: var(--white-000) }
+
+nav.theme-dark,
+nav.theme-dark ul.links-wrapper.active { background-color: var(--black-000) }
+nav.theme-dark ul.links-wrapper li a:focus,
+nav.theme-dark ul.links-wrapper li a:hover,
+nav.theme-dark ul.links-wrapper li a:active { color: var(--green-200) }
+nav.theme-dark a#btn-cta:focus,
+nav.theme-dark a#btn-cta:hover,
+nav.theme-dark a#btn-cta:active { color: var(--green-200) }
+nav.theme-dark a#btn-cta:link,
+nav.theme-dark a#btn-cta:visited { color: var(--black-000) }
+nav.theme-dark a#btn-cta:focus,
+nav.theme-dark a#btn-cta:hover,
+nav.theme-dark a#btn-cta:active { background-color: var(--green-200) }
 
 
 
@@ -38,5 +57,92 @@ em {
 nav, footer {
     font-family: 'Roboto', sans-serif;
 }
+
+nav.theme-dark, nav.theme-dark ul.links-wrapper.active {
+    background-color: var(--green-200);
+}
+
+nav.theme-dark ul.links-wrapper li a:link, nav.theme-dark ul.links-wrapper li a:visited {
+    color: black;
+}
+
+footer.theme-dark {
+    background-color: black;
+}
+
+footer.theme-dark ul.footer-links li a:link, footer.theme-dark ul.footer-links li a:visited {
+    color: var(--green-200);
+    text-decoration-color: var(--green-200);
+}
+
+footer.theme-dark ul.footer-icons li a:link i, footer.theme-dark ul.footer-icons li a:visited i {
+    color: var(--green-200);
+}
+
+.theme-dark a:not(.btn):link, .theme-dark a:not(.btn):visited {
+    color: var(--green-200);
+}
+
+header.theme-dark .container-btn a.btn:nth-child(1):link,
+header.theme-dark .container-btn a.btn:nth-child(1):visited { color: var(--black-000) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):link,
+header.theme-dark .container-btn a.btn:nth-child(1):visited { background-color: var(--green-200) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):link,
+header.theme-dark .container-btn a.btn:nth-child(1):visited { border-color: var(--green-200) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):focus,
+header.theme-dark .container-btn a.btn:nth-child(1):hover,
+header.theme-dark .container-btn a.btn:nth-child(1):active { color: var(--green-200) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):focus,
+header.theme-dark .container-btn a.btn:nth-child(1):hover,
+header.theme-dark .container-btn a.btn:nth-child(1):active { background-color: var(--gray-800) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):focus,
+header.theme-dark .container-btn a.btn:nth-child(1):hover,
+header.theme-dark .container-btn a.btn:nth-child(1):active { border-color: var(--black-000) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):link,
+header.theme-dark .container-btn a.btn:nth-child(2):visited { border-color: var(--green-200) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):link,
+header.theme-dark .container-btn a.btn:nth-child(2):visited { color: var(--green-200) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):focus,
+header.theme-dark .container-btn a.btn:nth-child(2):hover,
+header.theme-dark .container-btn a.btn:nth-child(2):active { color: var(--green-200) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):focus,
+header.theme-dark .container-btn a.btn:nth-child(2):hover,
+header.theme-dark .container-btn a.btn:nth-child(2):active { border-color: var(--black-000) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):focus,
+header.theme-dark .container-btn a.btn:nth-child(2):hover,
+header.theme-dark .container-btn a.btn:nth-child(2):active { background-color: var(--gray-800) }
+
+
+.section-selector-1 a.btn:link,
+.section-selector-1 a.btn:visited { color: var(--black-000) }
+
+.section-selector-1 a.btn:link,
+.section-selector-1 a.btn:visited { border-color: var(--green-200) }
+
+.section-selector-1 a.btn:link,
+.section-selector-1 a.btn:visited { background-color: var(--green-200) }
+
+.section-selector-1 a.btn:focus,
+.section-selector-1 a.btn:hover,
+.section-selector-1 a.btn:active { color: var(--green-200) }
+
+.section-selector-1 a.btn:focus,
+.section-selector-1 a.btn:hover,
+.section-selector-1 a.btn:active { background-color: var(--gray-800) }
+
+.section-selector-1 a.btn:focus,
+.section-selector-1 a.btn:hover,
+.section-selector-1 a.btn:active { border-color: var(--gray-800) }
+
 
 
