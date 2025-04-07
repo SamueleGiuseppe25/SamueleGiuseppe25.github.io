@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="update-box"></div>
+
+    <script>
+
+        async function getStuff(url) {
+            try{
+                const response = await fetch(url);
+                if(!response.ok){
+                console.log(`Network response was not ok - Status: ${response.status} ${response.statusText}`);
+
+            }else{
+                const data = await response.json();
+                console.log(data);
+                updateWebPage(data);
+            }
+            }
+            catch(error){
+                console.error("Error fetching data:", error);
+            }
+            
+            }
+
+        getStuff("https://reqres.in/api/users/2");
+
+        function updateWebPage(data){
+            const updateBox = document.getElementById("update-box");
+            updateBox.innerHTML = `
+            <h2>${data.data.first_name}</h2>
+            <p>${data.data.email}</p>
+            `;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-buttons.html</title>
+
+    <style>
+        body { margin: 10px;padding: 10px;border: none;line-height: 1.5;margin-left: auto;margin-right: auto;min-height: 100vh; font-family: sans-serif } html {height: 100%;} img {width: 100%;height: auto;display: block }
+        section { padding: 2% calc((100% - 960px)/ 2); }
+        section h1 { font-size: 48px;letter-spacing: -1px;line-height: 1.1;margin-bottom: 6px }
+        section h2 { font-size: 36px;letter-spacing: -1px;line-height: 1.1;margin-bottom: 6px }
+        section p { font-size: 18px;line-height: 1.5;color:#333;margin: 0 0 16px 0 }
+        section button { font-size: 18px;line-height: 1; background-color: red; color: white;margin: 0 0 16px 0; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+
+        .newHeadingClass { 
+        background-color: blue; 
+        color: pink; 
+        padding: 10px; 
+        border-radius: 5px; 
+        }
+
+        .messageOrderPlaced { 
+        background-color: lightgreen; 
+        color: #000; 
+        border: solid 1px green;
+        padding: 10px; 
+        border-radius: 5px
+        }
+
+        .newBackgroundDiv{
+            background-color:red;
+            padding: 10px;
+            border-radius: 5px;
+            color: blue;           
+            margin-bottom: 10px;
+            
+        }
+
+        .newBackgroundDiv p{
+            color: inherit;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main>
+    
+    <section id = "mySection">
+        
+
+        <h1 id="bigHeading">Big heading here</h1>
+
+        <h2>Smaller heading</h2>
+        <p id="paraText">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+
+        <button id="btn_1" onclick="changeHeading()">Update h1</button>
+
+        <button id="btn_2" onclick="restoreHeading()">Restore h1</button>
+
+        <button id="btn_3" onclick="doParaText()">Update para text</button>
+
+        <button id="btn_4" onclick="placeOrder()">Order Product</button>
+
+        <div id="uniqueId">
+            <h1>Unique ID</h1>
+            <p>Unique ID paragraph text here.</p>
+
+            <button id="btn_5" onclick="turnRed()">Turn Red</button>
+
+            <button id="btn_6" onclick="resetColor()">Reset Color</button>
+            
+        </div>
+      
+        
+
+        <button id="btn_7" onclick="addParagraph()">Add Paragraph</button>
+
+        <button id="btn_8" onclick="addBoldText()">Add Bold Text</button>
+
+        <p id="boldText">This is some text</p>
+
+
+    </section>
+
+    </main>
+
+    <script>
+
+        // JavaScript code goes here
+
+        // Access a web page element with by its unique ID
+ /*       let bigHeading = document.getElementById('bigHeading');
+
+        // JavaScript can change the properties of an element
+        bigHeading.style.backgroundColor = 'red'; // NOT background-color
+        bigHeading.style.color = 'white';
+
+        // JavaScript can change the content of an element
+        bigHeading.innerText = "New heading text from JS";
+        bigHeading.innerHTML = "New heading text in <i>italics</i> from JS"; */
+
+        // Function to change the heading properties and content
+        function changeHeading() {
+            // Get the HTML heading element from the web page
+            let bigHeading = document.getElementById('bigHeading');
+            
+            // Update HTML element styles directly;
+            /*bigHeading.style.backgroundColor = 'red';
+            bigHeading.style.color = 'white';*/
+
+            // Add a new CSS class to the element
+            bigHeading.classList.add('newHeadingClass');
+            // Update HTML element content
+            bigHeading.innerText = 'New heading text from JS';
+            // Update the HTML element content with HTML tag included
+            bigHeading.innerHTML = 'New heading text in <i>italics</i> from JS';
+
+}
+
+        // Function to change the paragraph content
+        function doParaText() {
+            // Get the HTML first paragraph of text from the web page
+            let strText = document.getElementById('paraText');
+            // Update its content
+            strText.innerText = 'New paragraph text from JS.';
+        }
+
+        // Function to restore the heading to its original state
+        function restoreHeading() {
+            // Get the HTML heading element from the web page
+            let bigHeading = document.getElementById('bigHeading');
+            // Remove the CSS class from the element
+            bigHeading.classList.remove('newHeadingClass');
+            // Restore the original heading text
+            bigHeading.innerText = 'Big heading here';
+        }
+
+        // Function to display a message when the order is placed
+        function placeOrder(){
+            // Create a new paragraph element
+            let newMessage = document.createElement('div');
+            // Add css class to the new element
+            newMessage.classList.add('messageOrderPlaced');
+            // Add content to the new paragraph element
+            newMessage.innerHTML = 'Your Order has been placed <b>successfully</b>.';
+            let parentSection = document.getElementById('mySection');
+            // Add new element to the web page
+            parentSection.appendChild(newMessage);
+
+            // Remove the message after 5 seconds (5000 milliseconds)
+            setTimeout(() => {
+            // Check if the message still exists before removing it
+             if (newMessage.parentNode) {
+            parentSection.removeChild(newMessage);
+            }
+            }, 5000); // 5000 milliseconds = 5 seconds
+        }
+
+        function addParagraph(){
+            let newPara = document.createElement('p');
+            newPara.innerText = 'This is a new paragraph text from Samuele.';
+            let parentSection = document.getElementById('mySection');
+            parentSection.appendChild(newPara);
+        }
+
+        function turnRed(){
+            let uniqueId = document.getElementById('uniqueId');
+            uniqueId.classList.add('newBackgroundDiv');
+        }
+
+        function resetColor(){
+            let uniqueId = document.getElementById('uniqueId');
+            uniqueId.classList.remove('newBackgroundDiv');
+        }
+
+        function addBoldText(){
+            let boldText = document.getElementById('boldText');
+            boldText.innerHTML = 'This is some <b>bold</b> text';
+        }
+
+ 
+
+        
+    </script>
+
+</body>
+</html>
