@@ -13,24 +13,41 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/lunadoge.css" />
-    <link rel="stylesheet" href="assets/css/css-javascript.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
+    <link rel="stylesheet" href="../../assets/css/custom.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Favicon (https://favicon.io/) -->
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="../../assets/img/favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../assets/img/favicon_io/site.webmanifest" />
 
     <style>
       /* ============ Header Colours =============*/
       header.hero-block-js {
         background-color: var(--black-000);
       }
-      header.hero-block-js h1 { 
-        color: #C6F6D5;
+      header.hero-block-js h1 {
+        color: #c6f6d5;
       }
       header.hero-block-js h2 {
         color: var(--white-000);
@@ -107,44 +124,39 @@
   <body>
     <!-- navigation menu -->
 
-    <nav class="container-menu menu-desktop menu-sticky">
-      <a href="../../index.html"
-        ><img src="../../assets/img/My Logo.png" alt="website logo"
-      /></a>
-      <ul class="">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="../../portfolio/index.html">Portfolio</a></li>
-        <li><a href="index.html">JavaScript</a></li>
-        <li><a href="../../store/index.html">Store</a></li>
-        <li>
-          <a href="../../contact/index.html" id="btn-cta"
-            ><span>Contact</span><i class="fas fa-arrow-right"></i
-          ></a>
-        </li>
-      </ul>
-      <div class="item-icon">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    </nav>
+    <nav class="theme-dark"><div class="container-menu">
+        <a href="../../index.html" class="brand">
+            <img src="../../assets/img/My Logo.png" alt="My website logo">
+        </a>
+    
+        <div class="container-menu-links">
+    
+            <div class="nav-toggle" id="nav-toggle-btn">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+    
+            <ul class="links-wrapper">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../portfolio/index.html">Portfolio</a></li>
+                <li><a href="index.html">JavaScript</a></li>
+                <li><a href="../../store/index.html">Store</a></li>
+                <li><a class="btn btn-solid btn-soft" id="btn-cta" href="../../contact/index.html"><span>Contact</span> <i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+        </div></div></nav>
 
     <!-- header hero block -->
-    <header class="hero-block hero-block-js">
-      <div class="hero-text-container">
-        <h1>JavaScript Projects</h1>
-        <h2>A selection of my recent JavaScript projects.</h2>
-        <img
-          src="assets/img/code.png"
-          alt="Sample JavaScript code"
-          class="code-image"
-        />
-      </div>
+    <header class="theme-dark text-center-mobile">
+        <div class="container-text w-1140px">
+            <h1>JavaScript Projects</h1>
+            <h2>A selection of my recent JavaScript projects.</h2>
+        </div>
     </header>
 
     <!-- main content with sections -->
     <main>
-      <section class="container-flex theme-js">
+      <section class="theme-dark section-selector-1 w-1356px">
         <div class="col-4">
           <h3>Data Tables</h3>
 
@@ -221,7 +233,7 @@
         </div>
 
         <div class="col-4">
-          <h3>Image Blue Filter</h3>
+          <h3>Image Blur Filter</h3>
 
           <p>
             Uses CSS variables and HTML custom data attributes to adjust the
@@ -292,54 +304,34 @@
           </div>
         </div>
 
-        <div class="col-4" style="background-color: transparent">
-          <p></p>
-        </div>
-
-        <div class="col-4" style="background-color: transparent">
-          <p></p>
-        </div>
+        <div class="col-4" style="background-color: transparent"><p></p></div>
+        <div class="col-4" style="background-color: transparent"><p></p></div>
       </section>
     </main>
 
     <!-- footer -->
-    <footer>
-      <h2>Giuseppe Samuele Quarato</h2>
+    <footer class="theme-dark text-center-desktop text-center-mobile">
 
-      <h3>Excellence in digital creation</h3>
+        <h2>Giuseppe Samuele Quarato</h2>
 
-      <ul class="footer-links">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="../../portfolio/index.html">Portfolio</a></li>
-        <li><a href="index.html">JavaScript</a></li>
-        <li><a href="../../store/index.html">Store</a></li>
-        <li><a href="../../contact/index.html">Contact</a></li>
-      </ul>
+        <h3>Front-end designer and developer</h3>
 
-      <ul class="footer-icons">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/giuseppe-samuele-quarato/"
-            target="_blank" rel="noopener noreferrer"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://github.com/SamueleGiuseppe25" target="_blank" rel="noopener noreferrer"
-            ><i class="fab fa-github-square"></i
-          ></a>
-        </li>
-      </ul>
+        <ul class="footer-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../portfolio/index.html">Portfolio</a></li>
+            <li><a href="index.html">JavaScript</a></li>
+            <li><a href="../../store/index.html">Store</a></li>
+            <li><a href="../../contact/index.html">Contact</a></li>
+        </ul>
 
-      <p class="privacy">
-        <a
-          href="../../privacy.html"
-          style="color:#C6F6D5; background-color: transparent"
-          >Privacy &amp; Legal</a
-        >
-      </p>
+        <ul class="footer-icons">
+            <li><a href="https://www.linkedin.com/in/giuseppe-samuele-quarato/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/SamueleGiuseppe25" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a></li>
+        </ul>
+
+        <p class="privacy"><a href="../../privacy.html" target ="_blank">Privacy &amp; Legal</a></p>
     </footer>
 
-    <script src="assets/js/menu.js"></script>
+    <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
   </body>
 </html>
